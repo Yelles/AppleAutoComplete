@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		808621452186127000BCDA40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808621442186127000BCDA40 /* AppDelegate.swift */; };
 		808621472186127000BCDA40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808621462186127000BCDA40 /* ViewController.swift */; };
-		8086214A2186127000BCDA40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808621482186127000BCDA40 /* Main.storyboard */; };
 		8086214C2186127100BCDA40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8086214B2186127100BCDA40 /* Assets.xcassets */; };
 		8086214F2186127100BCDA40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8086214D2186127100BCDA40 /* LaunchScreen.storyboard */; };
+		80862157218612B800BCDA40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80862156218612B800BCDA40 /* Main.storyboard */; };
+		8086215A2186186E00BCDA40 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808621592186186E00BCDA40 /* AlertsViewController.swift */; };
+		8086215C2186198100BCDA40 /* GetLocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086215B2186198100BCDA40 /* GetLocationPermission.swift */; };
+		8086216021861C0A00BCDA40 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086215F21861C0A00BCDA40 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		808621412186127000BCDA40 /* AppleAutoComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleAutoComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808621442186127000BCDA40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808621462186127000BCDA40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		808621492186127000BCDA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8086214B2186127100BCDA40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8086214E2186127100BCDA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808621502186127100BCDA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80862156218612B800BCDA40 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		808621592186186E00BCDA40 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		8086215B2186198100BCDA40 /* GetLocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationPermission.swift; sourceTree = "<group>"; };
+		8086215F21861C0A00BCDA40 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		808621382186126F00BCDA40 = {
 			isa = PBXGroup;
 			children = (
+				808621582186180D00BCDA40 /* Helpers */,
 				808621432186127000BCDA40 /* AppleAutoComplete */,
 				808621422186127000BCDA40 /* Products */,
 			);
@@ -56,12 +63,22 @@
 			children = (
 				808621442186127000BCDA40 /* AppDelegate.swift */,
 				808621462186127000BCDA40 /* ViewController.swift */,
-				808621482186127000BCDA40 /* Main.storyboard */,
+				8086215F21861C0A00BCDA40 /* MapViewController.swift */,
+				80862156218612B800BCDA40 /* Main.storyboard */,
 				8086214B2186127100BCDA40 /* Assets.xcassets */,
 				8086214D2186127100BCDA40 /* LaunchScreen.storyboard */,
 				808621502186127100BCDA40 /* Info.plist */,
 			);
 			path = AppleAutoComplete;
+			sourceTree = "<group>";
+		};
+		808621582186180D00BCDA40 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				808621592186186E00BCDA40 /* AlertsViewController.swift */,
+				8086215B2186198100BCDA40 /* GetLocationPermission.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +141,7 @@
 			files = (
 				8086214F2186127100BCDA40 /* LaunchScreen.storyboard in Resources */,
 				8086214C2186127100BCDA40 /* Assets.xcassets in Resources */,
-				8086214A2186127000BCDA40 /* Main.storyboard in Resources */,
+				80862157218612B800BCDA40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8086215C2186198100BCDA40 /* GetLocationPermission.swift in Sources */,
+				8086216021861C0A00BCDA40 /* MapViewController.swift in Sources */,
 				808621472186127000BCDA40 /* ViewController.swift in Sources */,
+				8086215A2186186E00BCDA40 /* AlertsViewController.swift in Sources */,
 				808621452186127000BCDA40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		808621482186127000BCDA40 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808621492186127000BCDA40 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8086214D2186127100BCDA40 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FBR82DCBB;
 				INFOPLIST_FILE = AppleAutoComplete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FBR82DCBB;
 				INFOPLIST_FILE = AppleAutoComplete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
